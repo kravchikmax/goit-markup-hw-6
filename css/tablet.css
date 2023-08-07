@@ -1,18 +1,151 @@
 .container {
-    max-width: 768px;
+  max-width: 768px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 120px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-address {
+  display: block;
+  font-style: normal;
+  margin-left: auto;
+}
+
+.mob-menu {
+    display: none;
+}
+
+.menu-open-btn {
+    display: none;
+}
+
+.hero-main-page {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-tab.jpg);
+  max-width: 768px;
+  height: 436px;
+}
+
+.hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.hero-button {
+  margin-top: 36px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tab-2x.jpg);
+  }
 }
 
 .values-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: unset;
-    gap: 72px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  gap: 72px;
+}
 
 .values-item {
-    width: calc((100% - 72px) / 2);
-  }
- 
+  width: calc((100% - 72px) / 2);
+}
+
 .values-title {
-text-align: start;
- } 
+  text-align: start;
+}
+
+.team-container {
+  max-width: 584px;
+  padding: 0 16px;
+}
+
+.team-list {
+  flex-direction: unset;
+  flex-wrap: wrap;
+  gap: 64px 24px;
+}
+
+.team-item {
+  width: 100%;
+  width: calc((100% - 24px) / 2);
+}
+
+.customers-item {
+  width: 100%;
+  width: calc((100% - 48px) / 3);
+}
+
+.customers-list {
+    gap: 72px 24px;
+}
+
+.customers-container {
+    max-width: 584px;
+}
+
+.footer-section {
+  max-width: 584px;
+}
+
+@media screen and (max-width: 1157px) {
+  .footer-section {
+    gap: 72px 24px;
+    justify-content: start;
+  }
+}
+
+.footer-logo {
+  text-align: start;
+}
+
+.footer-soc-item {
+  margin: 0;
+}
+
+.footer-soc-text {
+  text-align: start;
+}
+
+.form-footer {
+  gap: 24px;
+}
+
+.form-footer-title {
+  text-align: start;
+}
+
+.footer-label {
+    width: 264px;
+}
+
+.footer-button {
+    margin: 0;
+}
+
+.modal {
+    width: 100%;
+    max-width: 408px;
+}
