@@ -23,9 +23,9 @@ body {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 p,
@@ -59,6 +59,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 428px;
 }
 
 /* HEADER */
@@ -171,7 +175,7 @@ img {
   color: var(--hover-background);
 }
 
-/* -----MAIN----- */
+/* MAIN */ 
 
 .text {
   font-size: 16px;
@@ -216,15 +220,8 @@ img {
   margin-bottom: 8px;
 }
 
-.values-icon-box {
-  width: 264px;
-  height: 112px;
-  background: var(--light-background);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
+.values-icon {
+  display: none;
 }
 
 .hero-button {
@@ -331,30 +328,35 @@ img {
 
 .values {
   background-color: var(--white-color);
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+.values-text {
+  font-weight: 500;
 }
 
 .values-list {
   display: flex;
-  gap: 24px;
-}
-
-.values-item {
-  width: calc((100% - 72px) / 4);
+  flex-direction: column;
+  gap: 72px;
 }
 
 .values-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
   color: var(--title-color);
   margin-bottom: 8px;
+  text-align: center;
 }
+
+
 
 .work {
   background-color: var(--white-color);
   padding-bottom: 120px;
+  display: none;
 }
 
 .work-list {
@@ -914,4 +916,6 @@ img {
   margin-left: 16px;
   fill: var(--light-background);
 }
+
+
 
